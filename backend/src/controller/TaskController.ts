@@ -10,6 +10,11 @@ export class TaskController {
   async addTask(req: Request, res: Response) {
     try {
       const { title } = req.body;
+      // Verificando se o título é válido
+      if (!title) {
+        res.status(400).json({ message: "Título inválido" });
+        return;
+      }
       // Adicionando uma tarefa na lista
       tasks.push({ id: tasks.length + 1, title, status: Status.pendente });
       res.status(201).json({ message: "Tarefa adicionada com sucesso" });
@@ -31,6 +36,13 @@ export class TaskController {
     try {
       const { id } = req.params;
       const { title, status } = req.body;
+
+      // Verificando se o id é válido
+      const isValidId = tasks.find((task) => task.id === Number(id));
+      if (!isValidId) {
+        res.status(400).json({ message: "ID inválido" });
+        return;
+      }
       // Atualizando a tarefa na lista
       const index = Number(id) - 1;
       tasks[index].title = title;
@@ -44,6 +56,12 @@ export class TaskController {
   async deleteTask(req: Request, res: Response) {
     try {
       const { id } = req.params;
+      // Verificando se o id é válido
+      const isValidId = tasks.find((task) => task.id === Number(id));
+      if (!isValidId) {
+        res.status(400).json({ message: "ID inválido" });
+        return;
+      }
       // Deletando a tarefa na lista
       const index = Number(id) - 1;
       tasks.splice(index, 1);
