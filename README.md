@@ -45,7 +45,7 @@ npm install
 npm run dev
 ```
 
-## 🛠️ Executando os testes (caso tenha testes)
+## 🛠️ Executando os testes
 
 Para realizar os testes, basta rodar o comando:
 
