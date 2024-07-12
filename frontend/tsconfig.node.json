@@ -5,7 +5,10 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
-    "strict": true
+    "strict": true,
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node"]
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "**/*.ts"]
 }
