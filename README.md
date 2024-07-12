@@ -1,91 +1,74 @@
-![Logo do projeto](https://i.imgur.com/kniMQHu.png)
+![Logo do projeto](./print.png)
 
-# Nome do Projeto
-
-Uma breve descrição do projeto aqui.
+# Todo List
 
 ## 🔥 Introdução
 
-Coloque aqui as instruções e quais são os objetivos desse projeto, funcionalidades.
+Resolução de um dos Code Challenge da ProUnion
 
 ### ⚙️ Pré-requisitos
 
-Coloque aqui passo a passo que precisa para instalar o projeto e como instalá-lo.
-
 ```
-Pode inserir exemplos.
-```
-
-### 🔨 Guia de instalação
-
-Explique aqui um passo a passo mostrando como deve executar para ter um ambiente de desenvolvimento em execução, desde instalar e rodar o projeto.
-
-Etapas para instalar:
-
-```
-Codigo, exemplos
+node
+git
 ```
 
-Passo 2:
+### 🔨 Guia de instalação e execução
+
+Etapas para instalar e executar:
+
+Clone o repositório:
 
 ```
-Codigo, exemplos
+git clone https://github.com/Darlan0307/Test-ProUnion-1.git
+```
+
+Entre na pasta do projeto e instale as dependências do backend:
+
+```
+cd backend/
+npm install
+npm run dev
+```
+
+volte um diretório com esse comando:
+
+```
+cd ../
+```
+
+Entre na pasta do projeto e instale as dependências do frontend:
+
+```
+cd frontend/
+npm install
+npm run dev
 ```
 
 ## 🛠️ Executando os testes (caso tenha testes)
 
-Explique como executar os testes automatizados para este sistema.
+Para realizar os testes, basta rodar o comando:
 
 ```
-Coloque exemplos
+npm run test
 ```
+
+verifique as mensagens no terminal para ver o resultado do teste.
 
 ## 📦 Tecnologias usadas:
 
-Coloque aqui as ferramentas que você usou para criar seu projeto, exemplo:
-
-- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-- ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-
-* Link para pegar as badges: https://github.com/Ileriayo/markdown-badges
-
-Ou pode separar por stacks:
-
 **Front-end:**
 
-- [React JS](https://react.dev/)
-- [TailwindCSS](https://tailwindcss.com/)
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+- ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-**Back-end:**
+  **Back-end:**
 
-- [NodeJS](https://nodejs.org/).
-- [TypeScript](https://www.typescriptlang.org/)
-- [Mongo DB](https://mongodb.com/)
+- ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+- ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
-## 👷 Autores
+## 👷 Autor
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início, colaboradores.
-
-- **Nome do dev** - _Função realizada_ - [nome_do_dev](https://github.com/link_do_Perfil)
-- **Sujeito Programador** - _Frontend do projeto_ - [@sujeitoprogramador](https://github.com/devfraga)
-
-## 📄 Licença
-
-Esse projeto está sob a licença (nome da licença) - acesse os detalhes [LICENSE.md](https://github.com/link_da_licenca).
-
-## 💭 FAQ - Perguntas frequentes
-
-#### Questão 1
-
-Resposta 1
-
-#### Questão 2
-
-Resposta 2
-
-## 💡 Expressões de gratidão
-
-- Um agradecimento publicamente.
-- Para suporte, mande um email para nome@teste.com.
-- Link para o seu linkedin [Meu linkedin](https://www.linkedin.com/in/darlan-martins-8a7956259/)
+- **Darlan Martins** - _Desenvolvedor_
