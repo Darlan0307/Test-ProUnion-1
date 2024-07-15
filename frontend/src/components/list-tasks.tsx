@@ -11,7 +11,7 @@ type ListTasksProps = {
 
 const ListTasks = ({ tasks, updateTask, deleteTask }: ListTasksProps) => {
   return (
-    <ul className="flex flex-col gap-5">
+    <ul className="flex flex-col gap-5" id="list-tasks">
       {tasks.map((task) => (
         <li
           key={task.id}

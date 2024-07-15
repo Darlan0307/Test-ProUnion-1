@@ -22,7 +22,7 @@ const DialogDelete = ({ id, deleteTask }: Props) => {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button size="icon" variant="outline">
+        <Button id="btn-delete-trigger" size="icon" variant="outline">
           <Trash size={18} />
         </Button>
       </AlertDialogTrigger>
@@ -37,7 +37,7 @@ const DialogDelete = ({ id, deleteTask }: Props) => {
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel>Cancelar</AlertDialogCancel>
-          <AlertDialogAction onClick={() => deleteTask(id)}>
+          <AlertDialogAction id="btn-delete" onClick={() => deleteTask(id)}>
             Confirmar
           </AlertDialogAction>
         </AlertDialogFooter>

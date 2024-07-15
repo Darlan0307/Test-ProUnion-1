@@ -19,8 +19,9 @@ const FormTask = ({ handleSubmit, setInput, input }: FormTaskProps) => {
         placeholder="Adicionar tarefa..."
         onChange={(e) => setInput(e.target.value)}
         value={input}
+        id="input-text"
       />
-      <Button type="submit" className="" size="icon">
+      <Button id="btn-submit" type="submit" className="" size="icon">
         <Plus />
       </Button>
     </form>

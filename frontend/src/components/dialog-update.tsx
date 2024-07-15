@@ -25,7 +25,7 @@ const DialogUpdate = ({ task, updateTask }: Props) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button size="icon" variant="outline">
+        <Button id="btn-update-trigger" size="icon" variant="outline">
           <Pencil size={18} />
         </Button>
       </DialogTrigger>
@@ -46,7 +46,9 @@ const DialogUpdate = ({ task, updateTask }: Props) => {
             <Button>Cancelar</Button>
           </DialogClose>
           <DialogClose asChild>
-            <Button onClick={() => updateTask(taskUpdate)}>Atualizar</Button>
+            <Button id="btn-update" onClick={() => updateTask(taskUpdate)}>
+              Atualizar
+            </Button>
           </DialogClose>
         </DialogFooter>
       </DialogContent>
