@@ -23,7 +23,13 @@ Clone o repositório:
 git clone https://github.com/Darlan0307/Test-ProUnion-1.git
 ```
 
-Entre na pasta do projeto e instale as dependências do backend:
+Entre na pasta do projeto:
+
+```
+cd Test-ProUnion-1/
+```
+
+Entre na pasta backend, instale as dependências e inicie o servidor:
 
 ```
 cd backend/
@@ -31,19 +37,15 @@ npm install
 npm run dev
 ```
 
-volte um diretório com esse comando:
-
-```
-cd ../
-```
-
-Entre na pasta do projeto e instale as dependências do frontend:
+Crie outro terminal e entre na pasta fronend e instale as dependências e inicie a aplicação:
 
 ```
 cd frontend/
 npm install
 npm run dev
 ```
+
+A aplicação estará disponível em [localhost:5173](http://localhost:5173/)
 
 ## 📦 Tecnologias usadas:
 
