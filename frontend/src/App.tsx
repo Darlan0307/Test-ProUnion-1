@@ -3,7 +3,9 @@ import { Toaster } from "@/components/ui/sonner";
 function App() {
   return (
     <>
+      {/* Aplicação Todo App */}
       <TodoApp />
+      {/* Componente de notificação */}
       <Toaster />
     </>
   );

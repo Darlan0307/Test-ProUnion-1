@@ -15,7 +15,7 @@ export class TaskController {
         res.status(400).json({ message: "Título inválido" });
         return;
       }
-      // Adicionando uma tarefa na lista
+      // Adicionando uma tarefa na lista com id autoincrementado e status pendente
       tasks.push({ id: tasks.length + 1, title, status: Status.pendente });
       res.status(201).json({ message: "Tarefa adicionada com sucesso" });
     } catch (error) {
@@ -37,13 +37,13 @@ export class TaskController {
       const { id } = req.params;
       const { title, status } = req.body;
 
-      // Verificando se o id é válido
+      // Verificando se o id é válido, percorrendo a lista de tarefas
       const isValidId = tasks.find((task) => task.id === Number(id));
       if (!isValidId) {
         res.status(400).json({ message: "ID inválido" });
         return;
       }
-      // Atualizando a tarefa na lista
+      // Atualizando a tarefa na lista com o novo status e título
       const index = Number(id) - 1;
       tasks[index].title = title;
       tasks[index].status = status;
@@ -62,7 +62,7 @@ export class TaskController {
         res.status(400).json({ message: "ID inválido" });
         return;
       }
-      // Deletando a tarefa na lista
+      // Deletando a tarefa na lista usando o splice
       const index = Number(id) - 1;
       tasks.splice(index, 1);
       res.status(200).json({ message: "Tarefa deletada com sucesso" });

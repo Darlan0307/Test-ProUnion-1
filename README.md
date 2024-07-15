@@ -45,16 +45,6 @@ npm install
 npm run dev
 ```
 
-## 🛠️ Executando os testes
-
-Para realizar os testes, basta rodar o comando:
-
-```
-npm run test
-```
-
-verifique as mensagens no terminal para ver o resultado do teste.
-
 ## 📦 Tecnologias usadas:
 
 **Front-end:**
