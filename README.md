@@ -37,7 +37,7 @@ npm install
 npm run dev
 ```
 
-Crie outro terminal e entre na pasta fronend e instale as dependências e inicie a aplicação:
+Crie outro terminal e entre na pasta frontend e instale as dependências e inicie a aplicação:
 
 ```
 cd frontend/
